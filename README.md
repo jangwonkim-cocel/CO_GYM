@@ -105,8 +105,8 @@ To evaluate the performance of the CO-GYM framework, we conducted an experiments
 | **Environment**    | **Return** | **Timesteps** |
 |--------------------|------------|---------------|
 | QuadInvPendulum-v0 | 902        | 1.4 M         |
-| Humanoid-v3        | 9819       | 3M            |
-| Ant-v3             | 8521       | 3M            |
+| Humanoid-v3        | 9819       | 3 M            |
+| Ant-v3             | 8521       | 3 M            |
 
 <p align="center">
   <img src="/fig/quad_inv_pendulum.gif" width="40%"/>
