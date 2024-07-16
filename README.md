@@ -50,7 +50,7 @@ D2AC aims to provide a flexible and powerful framework for reinforcement learnin
 <br/>
 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-    <img src="./fig/fig1.png" width="70%" style="display: block; margin: auto;"/>
+    <img src="./fig/fig1.png" width="60%" style="display: block; margin: auto;"/>
     <p style="font-size: 14px; color: gray; text-align: center;">Figure1. The diagram of the D2AC framework.</p>
 </div>
 
