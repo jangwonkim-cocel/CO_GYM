@@ -29,7 +29,7 @@ IN THE SOFTWARE.
 * All algorithms are written as independent ```.py``` files (easy to debug & modify).
 * Supports various state-of-the-art algorithms: PPO, PPG, DDPG, TD3, SAC, and TQC.
 * Various tricks not present in the original papers have been incorporated into the algorithms.
-* Supports the **Dual Distributed Actor-Critic (D2AC) framework**, leading to strong performance of on-policy algorithms.
+* Supports the **Dual Distributed Actor-Critic (D2AC) framework**, leading to strong performance of **on-policy** algorithms.
 
 ### What is the Dual Distributed Actor-Critic Architecture (D2AC)?
 The Dual Distributed Actor-Critic (D2AC) framework is a novel framework designed to enhance the performance and scalability of on-policy reinforcement learning algorithms. D2AC leverages the following key components:
