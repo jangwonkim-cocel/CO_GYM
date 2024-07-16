@@ -53,7 +53,7 @@ D2AC aims to provide a flexible and powerful framework for reinforcement learnin
   <img src="./fig/fig1.png" width="62%"/>
 </p>
 <p align="center" style="font-size: 14px; color: gray;">Figure1. The diagram of the D2AC framework.</p>
-
+---
 ### How to Run CO-GYM?
 
 1. **Create an Environment**
