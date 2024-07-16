@@ -111,7 +111,7 @@ To evaluate the performance of the CO-GYM framework, we conducted an experiments
 <p align="center">
   <img src="/fig/quad_inv_pendulum.gif" width="40%"/>
 </p>
-<p align="center" style="font-size: 14px; color: gray;">Figure2. Control of QuadInvPendulum-v0 Using TQC.</p>
+<p align="center" style="font-size: 14px; color: gray;">Figure3. Control of QuadInvPendulum-v0 Using TQC.</p>
 
 - - -
 ### Save & Load the Model
