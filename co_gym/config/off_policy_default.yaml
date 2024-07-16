@@ -40,7 +40,7 @@ eval_freq : !!int 200
 eval_episodes : !!int 5
 use_wandb : !!bool false
 save_model : !!bool true
-model_checkpoint_freq : !!int 5000
+model_checkpoint_freq : !!int 10000
 
 # Loading Model
 load_model : !!bool false
