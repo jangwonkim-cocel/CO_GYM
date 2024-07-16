@@ -1,0 +1,99 @@
+<mujoco model="QuadruplePendulum">
+    <compiler angle="radian" balanceinertia="true" discardvisual="false" meshdir="meshes/quad_inv_pendulum/" texturedir="./textures"/>
+    <size njmax="500" nconmax="100" nuserdata="2" />
+
+    <option timestep="0.002">
+		<flag warmstart="enable" />
+	</option>
+
+    <!-- Default parameters -->
+    <default class="arm">
+        <joint damping='0.003'/>
+        <geom contype="0" conaffinity="0"/>
+    </default>
+
+    <asset>
+        <mesh name="Frame" file="Frame.STL" />
+        <mesh name="DAQ" file="DAQ.STL" />
+        <mesh name="daq1" file="daq1.STL" />
+        <mesh name="clip" file="clip.STL" />
+        <mesh name="epos" file="epos.STL" />
+        <mesh name="rail" file="rail.STL" />
+        <mesh name="motor" file="motor.STL" />
+        <mesh name="cart" file="cart.STL" />
+        <mesh name="lm1" file="lm1.STL" />
+        <mesh name="lm2" file="lm2.STL" />
+        <mesh name="lm3" file="lm3.STL" />
+        <mesh name="lm4" file="lm4.STL" />
+        <mesh name="cart_encoder" file="cart_encoder.STL" />
+        <mesh name="arm1" file="arm1.STL" />
+        <mesh name="encoder1" file="encoder1.STL" />
+        <mesh name="arm2" file="arm2.STL" />
+        <mesh name="encoder2" file="encoder2.STL" />
+        <mesh name="arm3" file="arm3.STL" />
+        <mesh name="encoder3" file="encoder3.STL" />
+        <mesh name="arm4" file="arm4.STL" />
+        <material name="black" shininess="0.03" specular="0.4" reflectance="100" rgba="0.01 0.01 0.01 1"/>
+        <material name="weight" shininess="0.03" specular="0.4" reflectance="100" rgba="0.01 0.01 0.01 1"/>
+        <material name="aluminum" shininess="0.03" specular="0.4" reflectance="50" rgba="0.8 0.8 0.8 1"/>
+        <material name="3dpart" shininess="0.0" specular="0.0" reflectance="0"/>
+    </asset>
+
+    <worldbody>
+
+        <light directional="true" ambient="0.2 0.2 0.2" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" castshadow="false" pos="0 3 3" dir="0 0 -1" name="light0" />
+
+        <geom type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="Frame" />
+        <geom type="mesh" rgba="0.69 0.71 0.72 1" mesh="DAQ" />
+        <geom type="mesh" rgba="0.31 0.31 0.811 1" mesh="daq1" />
+        <geom type="mesh" rgba="0.9 0.95 0.95 1" mesh="clip" />
+        <geom type="mesh" rgba="0.2 0.2 0.2 1" mesh="epos" />
+        <geom type="mesh" rgba="1 1 1 1" mesh="rail" />
+        <geom type="mesh" rgba="0.2 0.2 0.2 1" mesh="motor" />
+        <body name="cart" pos="0 0 0">
+            <inertial pos="-0.000785599 -2.13784e-06 -0.00556002" quat="0.522464 0.522461 -0.476474 0.476486" mass="1" diaginertia="0.00153615 0.00135012 0.000544999" />
+            <joint name="cartJoint" pos="0 0 0" axis="0 1 0" type="slide" damping="150"/>
+            <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="cart" />
+            <geom type="mesh" rgba="0.25 0.25 0.25 1" mesh="lm1" />
+            <geom type="mesh" rgba="0.25 0.25 0.25 1" mesh="lm2" />
+            <geom type="mesh" rgba="0.25 0.25 0.25 1" mesh="lm3" />
+            <geom type="mesh" rgba="0.25 0.25 0.25 1" mesh="lm4" />
+            <geom type="mesh" rgba="0.2 0.2 0.2 1" mesh="cart_encoder" />
+            <body name="arm1" pos="0.105 0 0.03">
+                <inertial pos="-0.00915763 -3.14576e-11 0.10898" quat="0.999885 0 -0.0151694 0" mass="0.129872" diaginertia="0.000584889 0.00057565 1.79126e-05" />
+                <joint name="arm1Axis" pos="0 0 0" axis="1 0 0" type="hinge" class="arm"/>
+                <geom type="mesh" rgba="0.25 0.25 0.25 1" mesh="arm1" />
+                <geom type="mesh" rgba="0.25 0.25 0.25 1" mesh="encoder1" />
+                <body name="arm2" pos="0.015 0 0.19">
+                    <inertial pos="-0.00894705 -2.7466e-11 0.127513" quat="0.999929 0 -0.0118783 0" mass="0.148772" diaginertia="0.000902509 0.000891764 2.02656e-05" />
+                    <joint name="arm2Axis" pos="0 0 0" axis="1 0 0" type="hinge" class="arm"/>
+                    <geom type="mesh" rgba="0.4784313725 0.694117647 0.996078431372 1" mesh="arm2" />
+                    <geom type="mesh" rgba="0.25 0.25 0.25 1" mesh="encoder2" />
+                    <body name="arm3" pos="0.015 0 0.226">
+                        <inertial pos="-0.00878393 -2.437e-11 0.145926" quat="0.999954 0 -0.00956196 0" mass="0.167672" diaginertia="0.00131647 0.00130421 2.26091e-05" />
+                        <joint name="arm3Axis" pos="0 0 0" axis="1 0 0" type="hinge" class="arm"/>
+                        <geom type="mesh" rgba="0.478431372 0.99607843137 0.49803921568 1" mesh="arm3" />
+                        <geom type="mesh" rgba="0.25 0.25 0.25 1" mesh="encoder3" />
+                        <body name="arm4" pos="0.015 0 0.262">
+                            <inertial pos="-0.0075 0 0.153601" mass="0.172469" diaginertia="0.00157656 0.00156221 2.08138e-05" />
+                            <joint name="arm4Axis" pos="0 0 0" axis="1 0 0" type="hinge" class="arm"/>
+                            <geom type="mesh" rgba="0.99607843 0.4313725490 0.643137255 1" mesh="arm4" />
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+
+    <!-- Actuator -->
+    <actuator>
+
+        <!-- Cart force control -->
+        <!--motor name='force_control' ctrllimited="true" joint='cartAxis' ctrlrange='-50 50' gear="15"/-->
+
+        <!-- Arm position control -->
+        <position name="pos_control" ctrllimited="true" ctrlrange="-0.85 0.85" joint="cartJoint" kp="1000"/>
+
+    </actuator>
+
+</mujoco>

@@ -1,0 +1,53 @@
+# Common Configurations
+random_seed : !!int 1
+n_workers : !!int 32
+learner_device : cuda
+worker_device : cpu
+max_epochs : !!int 60000
+max_rollout : !!int 512
+max_grad_norm : !!float 1.5
+batch_size : !!int 512
+critic_hidden_dims : [64, 64]
+policy_hidden_dims : [64, 64]
+gamma : !!float 0.995
+adam_eps : !!float 0.00001
+activation_fc : ELU
+actor_lr : !!float 0.0003
+critic_lr : !!float 0.0003
+
+# Configurations for Stochastic Algorithms (PPO, PPG, SAC, TQC)
+log_std_bound : [-20, 2]
+
+# Env Wrapper Configurations
+normalize_obs : !!bool true
+normalize_reward : !!bool true
+clip_obs : !!bool false
+obs_clip_range : !!float 10
+clip_reward : !!bool False
+reward_clip_range : !!float 10
+
+# PPO Configurations
+K_epochs : !!int 3
+policy_clip_eps : !!float 0.2
+gae_lambda : !!float 0.95
+entropy_coef : !!float 0.0
+clip_value : !!bool false
+value_clip_eps : !!float 0.2
+
+# PPG Configurations
+aux_update_freq : !!int 32
+aux_epochs : !!int 6
+aux_batch_size_coef : !!float 1.2
+bc_coef : !!float 1.0
+
+# Evaluation & Logging Configurations
+eval : !!bool true
+eval_freq : !!int 50
+eval_episodes : !!int 3
+use_wandb : !!bool false
+save_model : !!bool true
+model_checkpoint_freq : !!int 1000
+
+# Loading Model
+load_model : !!bool false
+load_checkpoint_dir : ''   # Relative dir. Example: PPO_HalfCheetah-v4_2024-04-28_03:10:36/checkpoint_5

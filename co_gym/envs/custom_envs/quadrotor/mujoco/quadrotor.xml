@@ -1,0 +1,52 @@
+<mujoco model="quad">
+    <compiler inertiafromgeom="true" coordinate="local" balanceinertia="true" discardvisual="false" meshdir="meshes/quadrotor/"/>
+    <size njmax="500" nconmax="100" nuserdata="4" />
+
+    <option timestep="0.015">
+		<flag warmstart="enable" />
+	</option>
+
+    <default>
+        <geom contype="0" />
+    </default>
+
+    <asset>
+        <mesh name="body" file="body.STL" />
+        <mesh name="cover" file="cover.STL" />
+        <mesh name="motor1" file="motor1.STL" />
+        <mesh name="prop1" file="prop1.STL" />
+        <mesh name="motor2" file="motor2.STL" />
+        <mesh name="prop2" file="prop2.STL" />
+        <mesh name="motor3" file="motor3.STL" />
+        <mesh name="prop3" file="prop3.STL" />
+        <mesh name="motor4" file="motor4.STL" />
+        <mesh name="prop4" file="prop4.STL" />
+        <texture type="skybox" builtin="gradient" width="128" height="128" rgb1=".4 .6 .8" rgb2="0 0 0"/>
+        <texture name="texgeom" type="cube" builtin="flat" mark="cross" width="127" height="1278" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" markrgb="1 1 1" random="0.01"/>
+        <!--texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2" width="512" height="512"/-->
+        <texture name="texplane" type="2d" builtin="checker" rgb1="0 0 0" rgb2="1 1 1" width="512" height="512"/>
+        <material name='MatPlane' reflectance='0.5' texture="texplane" texrepeat="1 1" texuniform="true"/>
+        <material name='geom' texture="texgeom" texuniform="true"/>
+    </asset>
+
+    <worldbody>
+
+        <light directional='true' diffuse='.8 .8 .8' specular='0.3 0.3 0.3' pos='0 0 4.0' dir='0 0 -1'/>
+		<geom name="floor" pos="0 0 -5" size="10 10 .2" type="plane" material="MatPlane" conaffinity="1" rgba="1 1 1 0.1" condim="3"/>
+		<geom name="goal" pos="0 0 -2" size=".04 .04 .04" type="sphere" rgba="1 0 0 0.7"/>
+
+        <body name="quadrotor" pos="0 0 0" quat="0 1 0 0">
+            <joint name="root" type="free" damping="0" armature="0" pos="0 0 0"/>
+            <geom name="body" type="mesh" rgba="0.7 0.7 0.7 1" mesh="body"  quat="0 1 0 0"/>
+            <geom name="cover" type="mesh" rgba="1 1 1 1" mesh="cover" quat="0 1 0 0"/>
+            <geom name="motor1" type="mesh" pos="0.14 0 -0.0025" rgba="0.568627 0.54902 0.509804 1" mesh="motor1" quat="0 1 0 0" />
+            <geom name="motor2" type="mesh" pos="-0.14 0 -0.0025" rgba="0.568627 0.54902 0.509804 1" mesh="motor2" quat="0 1 0 0" />
+            <geom name="motor3" type="mesh" pos="0 -0.14 -0.0025" rgba="0.568627 0.54902 0.509804 1" mesh="motor3" quat="0 1 0 0" />
+            <geom name="motor4" type="mesh" pos="0 0.14 -0.0025" rgba="0.568627 0.54902 0.509804 1" mesh="motor4" quat="0 1 0 0" />
+            <geom name="prop1" type="cylinder" pos="0.14 0 0.0325" size="0.07 0.0015"  quat = "0 1 0 0" rgba="1 1 0 0.3" mass = ".025"/>
+            <geom name="prop2" type="cylinder" pos="-0.14 0 0.0325" size="0.07 0.0015"  quat = "0 1 0 0" rgba="1 1 0 0.3" mass = ".025"/>
+            <geom name="prop3" type="cylinder" pos="0 -0.14 0.0325" size="0.07 0.0015"  quat = "0 1 0 0" rgba="0 1 1 0.3" mass = ".025"/>
+            <geom name="prop4" type="cylinder" pos="0 0.14 0.0325" size="0.07 0.0015"  quat = "0 1 0 0" rgba="0 1 1 0.3" mass = ".025"/>
+        </body>
+    </worldbody>
+</mujoco>

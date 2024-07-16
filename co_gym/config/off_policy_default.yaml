@@ -1,0 +1,47 @@
+# Common Configurations
+random_seed : !!int 1
+n_workers : !!int 4
+learner_device : cuda
+worker_device : cpu
+max_epochs : !!int 100000
+max_rollout : !!int 25
+batch_size : !!int 256
+critic_hidden_dims : [256, 256]
+policy_hidden_dims : [256, 256]
+gamma : !!float 0.99
+adam_eps : !!float 0.00000001
+activation_fc : ReLU
+actor_lr : !!float 0.0003
+critic_lr : !!float 0.0003
+
+# Configurations for Stochastic Algorithms (PPO, PPG, SAC, TQC)
+log_std_bound : [-20, 2]
+
+# Configurations for Deterministic Algorithms (DDPG, TD3)
+noise_scale : !!float 0.1
+target_noise_clip : !!float 0.5
+target_noise_scale : !!float 0.2
+
+# Configurations for Offline Algorithms
+offline_buffer_capacity : !!int 1000000
+update_after : !!int 1000
+max_random_rollout : !!int 10000
+tau : !!float 0.005
+
+# SAC & TQC Configurations
+temperature_lr : !!float 0.0003
+n_critics : !!int 5
+n_quantiles : !!int 25
+n_drop_atoms : !!float 2
+
+# Evaluation & Logging Configurations
+eval : !!bool true
+eval_freq : !!int 200
+eval_episodes : !!int 5
+use_wandb : !!bool false
+save_model : !!bool true
+model_checkpoint_freq : !!int 5000
+
+# Loading Model
+load_model : !!bool false
+load_checkpoint_dir : ''   # Relative dir. Example: SAC_HalfCheetah-v4_2024-04-28_03:10:36/checkpoint_5
