@@ -94,11 +94,10 @@ To evaluate the performance of the CO-GYM framework, we conducted an experiments
 |   Humanoid-v3   |    5618    |  350 seconds   |
 |     Ant-v3      |    5095    |  240 seconds   |
 
-<div style="text-align: center;">
-<img src="/fig/quadrotor.gif" width="40%"/>
-<p style="font-size: 14px; color: gray;">Figure2. 
-Control of Quadrotor-v0 Using PPO.</p>
-</div>
+<p align="center">
+  <img src="/fig/quadrotor.gif" width="40%"/>
+</p>
+<p align="center" style="font-size: 14px; color: gray;">Figure2. Control of Quadrotor-v0 Using PPO.</p>
 
 
 * **TQC (Truncated Quantile Critic)**
@@ -109,12 +108,10 @@ Control of Quadrotor-v0 Using PPO.</p>
 | Humanoid-v3        | 9819       | 3M            |
 | Ant-v3             | 8521       | 3M            |
 
-<div style="text-align: center;">
-<img src="/fig/quad_inv_pendulum.gif" width="40%"/>
-<p style="font-size: 14px; color: gray;">Figure2. 
-Control of QuadInvPendulum-v0 Using TQC.</p>
-</div>
-
+<p align="center">
+  <img src="/fig/quad_inv_pendulum.gif" width="40%"/>
+</p>
+<p align="center" style="font-size: 14px; color: gray;">Figure2. Control of QuadInvPendulum-v0 Using TQC.</p>
 - - -
 ### Save & Load the Model
 
