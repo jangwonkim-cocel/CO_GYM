@@ -1,6 +1,6 @@
 Last Update: 2024-07-16 (Version: 0.2.1)
 
-<u>Update history</u>
+<span style="text-decoration: underline;">Update history</span>
 
 * 2024-04-15: Initial developer version released (ver: 0.1.0)
 * 2024-07-15: Added logging feature for off-policy algorithms (ver: 0.2.0)
