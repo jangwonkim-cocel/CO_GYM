@@ -7,7 +7,7 @@ setup(
     name='co_gym',
     author='Jangwon Kim, Jaehyung Cho',
     author_email='jangwonkim@postech.ac.kr, jaehyungcho@postech.ac.kr',
-    #url="https://github.com/",
+    url="https://github.com/jangwonkim-cocel/CO_GYM",
     License='MIT',
     version='0.2.1',  # Under Developing
     packages=find_packages(include=['.', 'co_gym']),
