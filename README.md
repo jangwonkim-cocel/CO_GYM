@@ -62,6 +62,12 @@ trainer.train()
 
 To evaluate the performance of the CO-GYM framework, we conducted an experiments using robotics simulation environments, which involve complex and high-dimensional continuous control tasks.
 
+**Test System Specifications:**
+- **CPU:** Intel i9-13900k
+- **GPU:** NVIDIA RTX 4090
+
+---
+
 * **PPO (Proximal Policy Optimization)**
 
 | **Environment** | **Return** | **Wall-time**  |
