@@ -1,6 +1,6 @@
 ## <span style="color:violet">CO-GYM: High-Performance & Researcher-Friendly Reinforcement Learning Algorithm Suites </span>
 
-### Features of CO-GYM?
+### Features of CO-GYM
 * No explicit C/C++ code.
 * All algorithms are written as independent ```.py``` files (easy to debug & modify).
 * Supports various state-of-the-art algorithms: PPO, PPG, DDPG, TD3, SAC, and TQC.
