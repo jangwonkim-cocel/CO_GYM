@@ -16,7 +16,7 @@ def make(env_id):
     # Your Custom Environments (Put the environment into "co_gym.envs.custom_envs" first.)
     elif env_id == 'FlamingoStand-v0':
         pass
-    elif env_id == 'Quadroter-v0':
+    elif env_id == 'Quadrotor-v0':
         return QuadrotorEnv(QuadrotorBase())
     elif env_id == 'QuadInvPendulum-v0':
         return QuadInvPendulumEnv(QuadInvPendulumBase())
