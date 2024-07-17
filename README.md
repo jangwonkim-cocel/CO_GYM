@@ -36,7 +36,7 @@ D2AC aims to provide a flexible and powerful framework for reinforcement learnin
 1. **Create an Environment**
 ```python
 import co_gym
-env = co_gym.make(env_id='Quadroter-v0')
+env = co_gym.make(env_id='Quadrotor-v0')
 ```
 2. **Choose an Algorith**
 ```python
