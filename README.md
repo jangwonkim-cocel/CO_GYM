@@ -17,7 +17,7 @@ The Dual Distributed Actor-Critic (D2AC) framework is a novel framework designed
 
 3. **Synchronous Updates**: All workers interacting with the environment use the same policy to collect data. This helps in improving the policy reliably. Synchronous policy updates are crucial for achieving better asymptotic performance compared to asynchronous update frameworks (e.g., IMPALA).
 
-4. **Provides Environment Wrappers**: The architecture includes various environment wrappers that facilitate observation normalization, reward scaling, and other preprocessing steps to improve the sample-efficient of the algorithms.
+4. **Provides Environment Wrappers**: The architecture includes essential environment wrappers that facilitate observation normalization, reward scaling, and other preprocessing steps to improve the sample-efficient of the algorithms.
 
 5. **High Performance**: The architecture is designed to maximize the use of CPU and GPU resources for faster training times. 
 
