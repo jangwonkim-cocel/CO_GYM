@@ -155,7 +155,7 @@ Here is an example of loading a model:
 
 ```python
 import co_gym
-env = co_gym.make(env_id='Quadroter-v0')
+env = co_gym.make(env_id='Quadrotor-v0')
 algorithm = 'PPO'
 my_config = {'load_model': True, 'load_checkpoint_dir': 'PPO_Hopper-v4_2024-07-15_23:37:55/checkpoint_3'}
 
