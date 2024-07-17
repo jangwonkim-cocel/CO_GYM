@@ -1,30 +1,6 @@
-Last Update: 2024-07-16 (Version: 0.2.1)
-
-**Update history**
-
-* 2024-04-15: Initial developer version released (ver: 0.1.0)
-* 2024-07-15: Added logging feature for off-policy algorithms (ver: 0.2.0)
-* 2024-07-16: Add QuadInvPendulum-v0 environment, and fix some minor bugs (ver: 0.2.1)
-
-### License
-All source codes were written by Jangwon Kim (김장원, <span style="color:violet"> jangwonkim@postech.ac.kr</span>) and Jaehyung Cho (조재형, <span style="color:violet">jaehyungcho@postech.ac.kr</span>)
-, Coputational Control and Engineering Lab., POSTECH, South Korea. Copyright (c) 
-
-This software and associated documentation files (the "Software") are the proprietary property of Jangwon Kim.
-Unauthorized use, copying, modification, merging, publishing, distribution, sublicensing, and/or selling of this Software is strictly prohibited
-without explicit permission from Jangwon Kim (jangwonkim@postech.ac.kr). Commercial use, sale, or distribution of this Software is strictly forbidden
-and may result in legal penalties.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-IN THE SOFTWARE.
-
-- - -
-
 ## <span style="color:violet">CO-GYM: High-Performance & Researcher-Friendly Reinforcement Learning Algorithm Suites </span>
 
-### Why is CO-GYM better?
+### Features of CO-GYM?
 * No explicit C/C++ code.
 * All algorithms are written as independent ```.py``` files (easy to debug & modify).
 * Supports various state-of-the-art algorithms: PPO, PPG, DDPG, TD3, SAC, and TQC.
@@ -71,7 +47,7 @@ algorithm = 'PPO'
 trainer = co_gym.load(env, algorithm=algorithm)
 trainer.train()
 ```
-That's it! It's that simple.
+That's it, simple!
 Moreover, if you do not want to use the default configuration of the algorithm, you can change the configuration like this:
 
 ```python
