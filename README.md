@@ -77,7 +77,7 @@ To evaluate the performance of the CO-GYM framework, we conducted experiments us
 |     Ant-v3      |    5095    |  240 seconds   |
 
 <p align="center">
-  <img src="/fig/quadrotor.gif" width="40%"/>
+  <img src="/fig/quadrotor.gif" width="45%"/>
 </p>
 <p align="center" style="font-size: 14px; color: gray;">Figure2. Control of Quadrotor-v0 using PPO.</p>
 
@@ -91,7 +91,7 @@ To evaluate the performance of the CO-GYM framework, we conducted experiments us
 | Ant-v3             | 8521       | 3 M            |
 
 <p align="center">
-  <img src="/fig/quad_inv_pendulum.gif" width="40%"/>
+  <img src="/fig/quad_inv_pendulum.gif" width="45%"/>
 </p>
 <p align="center" style="font-size: 14px; color: gray;">Figure3. Control of QuadInvPendulum-v0 using TQC.</p>
 
