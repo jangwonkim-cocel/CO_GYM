@@ -60,7 +60,7 @@ trainer.train()
 - - -
 ### Performance of CO-GYM
 
-To evaluate the performance of the CO-GYM framework, we conducted an experiments using robotics simulation environments, which involve complex and high-dimensional continuous control tasks.
+To evaluate the performance of the CO-GYM framework, we conducted experiments using robotics simulation environments, which involve complex and high-dimensional continuous control tasks.
 
 **Test System Specifications:**
 - **CPU:** Intel i9-13900k
