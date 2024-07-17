@@ -8,7 +8,7 @@ setup(
     author='Jangwon Kim, Jaehyung Cho',
     author_email='jangwonkim@postech.ac.kr, jaehyungcho@postech.ac.kr',
     #url="https://github.com/",
-    License='proprietary',
+    License='MIT',
     version='0.2.1',  # Under Developing
     packages=find_packages(include=['.', 'co_gym']),
     include_package_data=True,
