@@ -79,7 +79,7 @@ To evaluate the performance of the CO-GYM framework, we conducted experiments us
 <p align="center">
   <img src="/fig/quadrotor.gif" width="45%"/>
 </p>
-<p align="center" style="font-size: 14px; color: gray;">Figure2. Control of Quadrotor-v0 using PPO.</p>
+<p align="center" style="font-size: 14px; color: gray;">Figure2. Control of Quadrotor-v0 using PPO (best case).</p>
 
 
 * **TQC (Truncated Quantile Critic)**
