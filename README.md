@@ -72,7 +72,7 @@ To evaluate the performance of the CO-GYM framework, we conducted experiments us
 
 | **Environment** | **Return** | **Wall-time**  |
 |:---------------:|:----------:|:--------------:|
-|  Quadrotor-v0   |    682     |  420 seconds (best case) |
+|  Quadrotor-v0   |    682     |  420 seconds   |
 |   Humanoid-v3   |    5618    |  350 seconds   |
 |     Ant-v3      |    5095    |  240 seconds   |
 
