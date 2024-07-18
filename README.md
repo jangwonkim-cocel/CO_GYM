@@ -72,14 +72,14 @@ To evaluate the performance of the CO-GYM framework, we conducted experiments us
 
 | **Environment** | **Return** | **Wall-time**  |
 |:---------------:|:----------:|:--------------:|
-|  Quadrotor-v0   |    682     |  420 seconds   |
+|  Quadrotor-v0   |    682     |  420 seconds (best case) |
 |   Humanoid-v3   |    5618    |  350 seconds   |
 |     Ant-v3      |    5095    |  240 seconds   |
 
 <p align="center">
   <img src="/fig/quadrotor.gif" width="45%"/>
 </p>
-<p align="center" style="font-size: 14px; color: gray;">Figure2. Control of Quadrotor-v0 using PPO (best case).</p>
+<p align="center" style="font-size: 14px; color: gray;">Figure2. Control of Quadrotor-v0 using PPO.</p>
 
 
 * **TQC (Truncated Quantile Critic)**
