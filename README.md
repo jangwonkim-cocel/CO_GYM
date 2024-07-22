@@ -38,7 +38,7 @@ D2AC aims to provide a flexible and powerful framework for reinforcement learnin
 import co_gym
 env = co_gym.make(env_id='Quadrotor-v0')
 ```
-2. **Choose an Algorith**
+2. **Choose an Algorithm**
 ```python
 algorithm = 'PPO'
 ```
