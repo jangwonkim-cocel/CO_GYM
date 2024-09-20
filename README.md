@@ -56,10 +56,10 @@ my_config = {'n_workers': 32, 'policy_hidden_dims': [128, 128]}
 trainer = co_gym.load(env, algorithm=algorithm, config=my_config)
 trainer.train()
 ```
-4. **Recommended GPU Resource Allocation**
-   
-```n_workers``` = int(your_vram * 0.75)
-
+4. **Recommended ```'n_workers'``` value**
+```python
+n_workers = int(your_vram * 0.75)
+```
 For example, if your GPU has 16 GB of VRAM, you might set ```n_workers``` = int(16 * 0.75) = 12
 - - -
 ### Performance of CO-GYM
