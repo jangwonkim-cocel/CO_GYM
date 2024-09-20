@@ -58,9 +58,9 @@ trainer.train()
 ```
 4. **Recommended ```'n_workers'``` value**
 ```python
-n_workers = int(your_vram * 0.75)
+n_workers = int(your_vram * (4/3))
 ```
-For example, if your GPU has 16 GB of VRAM, you might set ```n_workers``` = int(16 * 0.75) = 12
+For example, if your GPU has 16 GB of VRAM, you might set ```n_workers``` = int(16 * (4/3)) = 21
 - - -
 ### Performance of CO-GYM
 
