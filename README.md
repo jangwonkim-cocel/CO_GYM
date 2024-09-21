@@ -56,7 +56,7 @@ my_config = {'n_workers': 32, 'policy_hidden_dims': [128, 128]}
 trainer = co_gym.load(env, algorithm=algorithm, config=my_config)
 trainer.train()
 ```
-4. **Recommended ```'n_workers'``` value**
+4. **Recommended ```'n_workers'``` value for PPO algorithm**
 ```python
 n_workers = int(your_vram * (4/3))
 ```
