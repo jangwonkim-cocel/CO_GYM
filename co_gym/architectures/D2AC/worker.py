@@ -95,17 +95,6 @@ class Worker:
                     worker_buffer = self.cal_target(self.buffer, self.critic)
                     time.sleep(0.005)
                     self.to_dl_queue.put(worker_buffer)
-                    '''
-                    while True:
-                        try:
-                            print(f"Try to put the policy (id: {self.rank})  |  (to_dl_queue.put(worker_buffer)).")
-                            self.to_dl_queue.put(worker_buffer)
-                            print("Success!")
-                            break
-                        except:
-                            print("Fail to put. Wait 10 sec.")
-                            time.sleep(10)
-                    '''
                     self.buffer.clear()
                     self.policy = self.from_a_queue.get()
                     if self.config['worker_device'] == 'cuda':
