@@ -1,3 +1,23 @@
+<div align="center">
+  <h1>CO-GYM</h1>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-%3E%3D3.8%20%3C3.11-blue?logo=python&style=flat-square" alt="Python Badge"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://pytorch.org/">
+    <img src="https://img.shields.io/badge/PyTorch-%3E%3D1.7-%23EE4C2C?logo=pytorch&style=flat-square" alt="PyTorch Badge"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://docs.python.org/3/library/multiprocessing.html">
+    <img src="https://img.shields.io/badge/Multiprocessing-lightgrey?logo=python&style=flat-square" alt="Multiprocessing Badge"/>
+  </a>
+
+  <br/><br/>
+  <img src="/fig/quadrotor.gif" alt="Quadrotor Demo" width="200px" style="margin: 0 10px;"/>
+  <img src="/fig/quad_inv_pendulum.gif" alt="QuadInvPendulum Demo" width="200px" style="margin: 0 10px;"/>
+</div>
+
+
 ## <span style="color:violet">CO-GYM: High-Performance & Researcher-Friendly Reinforcement Learning Algorithm Suites </span>
 
 ### Features of CO-GYM
