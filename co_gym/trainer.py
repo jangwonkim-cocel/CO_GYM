@@ -22,7 +22,7 @@ def load(env, algorithm, config=None):
 
 class Trainer:
     def __init__(self, env, algorithm, config):
-        print('*** Co-Gym (version 0.2.1)***\n')
+        print('*** Co-Gym (version 1.0.0)***\n')
 
         abs_path = inspect.getfile(self.__class__)[:-10]
         if algorithm in ['ppo', 'ppg', 'PPO', 'PPG']:
